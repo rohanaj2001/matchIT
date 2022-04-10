@@ -1,0 +1,22 @@
+body{
+  margin: 0;
+  padding: 0;
+
+}
+a{
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 0.5em;
+  
+}
+::-webkit-scrollbar-thumb{
+  width: 10px;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid transparent;
+  background-clip: content-box;
+
+}
+::-webkit-scrollbar-track{
+  background-color: #ffffff;
+}
