@@ -8,16 +8,11 @@
     height: 15vh;
     margin: 0;
     padding: 0;
-    z-index: 1;
 }
 a{
     color: white;
     text-decoration: none;
 }
-a:hover{
-    color: rgb(240, 239, 239);
-    cursor: pointer;
-  }
 
 .matchIT{
     font-size: 2rem;
@@ -39,5 +34,5 @@ a:hover{
     margin: 0 3vw;
 }
 .options a:hover{
-    color: rgb(100, 48, 48);
+    color: #FAC564;
 }

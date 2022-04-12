@@ -1,30 +1,36 @@
 :root{
   --progress:50%;
+  --button: rgb(0, 0, 0);
 }
 .cont {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: rgb(0, 0, 0);
   width: 100%;
   height: 150vh;
   margin: 0;
   padding: 0;
-  background-image: url("../images/bck1.png");
-  background-repeat: repeat-y;
-  /* background-position: right top; */
-  background-size: cover;
+  background-image: url("../images/Frame\ 5.png");
+  background-repeat: repeat;
+  background-position: center center;
+  /* background-size: cover; */
 
 }
 
 .content {
   height: 100vh;
-  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-weight: 500;
+  width: 80vw;
   text-align: left;
-  /* background-color: #995F46; */
-  border: 1px solid white;
-  margin: 32.5vh 0;
-  padding: 0;
-  color: white;
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 15vh;
+  padding:  0;
+  color: rgb(0, 0, 0);
 
 }
 
@@ -33,9 +39,9 @@
   font-size: 1rem;
   align-items: center;
   justify-content: space-between;
-  margin: 2%;
+  margin:auto 1% ;
   padding: 0 2%;
-  border: 1px solid white;
+  border: 1px solid rgb(0, 0, 0);
   height: 8%;
   width: auto;
 }
@@ -45,17 +51,17 @@
   box-shadow: none;
   border: 0;
   max-width: 100px;
-  min-width: 80px;
+  min-width: 70px;
   font-size: 1rem;
   border-radius: 20px;
-  background-color: rgb(255, 68, 35);
-  -ms-flex-item-align: end;
-  color: white;
+  background-color: var(--button);
+  color: rgb(255, 255, 255);
 
 }
 
 .choose:hover {
-  background-color: rgb(255, 38, 0);
+  color: #FAC564;
+
 }
 
 .choose:active {
@@ -67,11 +73,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid white;
+  border: 1px solid rgb(0, 0, 0);
   height: 62%;
+  /* min-height: fit-content; */
   width: auto;
-  margin: 2%;
+  margin:auto 1% ;
   padding: 0 2%;
+  width: auto;
+
 
 
 }
@@ -79,7 +88,7 @@
   height: 20px;
   padding: 2px;
   width: 100%;
-  border: 1px solid white;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 20px;
   
 }
@@ -87,17 +96,20 @@
   height: 100%;
   width: var(--progress);
   border-radius: 20px;
-  background-color: rgb(255, 68, 35);
-
+  background-color: var(--button)
 
 }
 .choose::-webkit-file-upload-button {
-  color: white;
+  color: rgb(255, 255, 255);
   display: inline-block;
-  background-color: rgb(255, 68, 35);
+  background-color: var(--button);
   border: none;
   border-radius: 3px;
   white-space: nowrap;
   cursor: pointer;
   font-size: 1rem;
+}
+.choose::-webkit-file-upload-button:hover{
+  color: #FAC564;
+
 }
