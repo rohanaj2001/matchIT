@@ -13,13 +13,13 @@ const homeget = (req, res) => {
 const shirtPost = async (req, res) => {
    
         
-        console.log(req.body.shirtImage);
+        // console.log(req.body.shirtImage);
         try {
-            await shirts.create({ shirtImage: req.body.shirtImage })
+            // await shirts.create({ shirtImage: req.body.shirtImage })
 
             var dataToSend
-            var data1=req.body.shirtImage;
-            const python = spawn('python', ['./python_scripts/test.py', data1]);
+            var img=req.body.shirtImage;
+            const python = spawn('python', ['./python_scripts/test.py', img]);
             python.stdout.on('data', function (data) {
                 console.log('Pipe data from python script ...');
                 dataToSend = data.toString();
