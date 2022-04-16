@@ -4,11 +4,9 @@ from traceback import print_tb
 from turtle import width
 from weakref import proxy
 import cv2
-print('hii there')
-img_data=sys.argv[1]
-print ('The image is stored for 10min only')
+img_data=(sys.argv[1]).split(",",1)
 with open("./shirt_images/shirtImage.png", "wb") as fh:
-  fh.write(base64.urlsafe_b64decode(img_data))
+  fh.write(base64.urlsafe_b64decode(img_data[1]))
 
 path = r"./shirt_images/shirtImage.png"
 img_rgb = cv2.imread(path, 1)
@@ -26,6 +24,8 @@ while (i<x)and(j<y):
 rn=int(rn/n)
 gn=int(gn/n)
 bn=int(bn/n)
+print('hii there')
+print ('The image is stored for 10min only')
 print('average red {rn}'.format(rn=rn))
 print('average green {gn}'.format(gn=gn))
 print('average blue {bn}'.format(bn=bn))
