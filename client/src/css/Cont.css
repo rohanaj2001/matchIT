@@ -1,6 +1,7 @@
 :root{
-  --progress:50%;
-  --button: rgb(0, 0, 0);
+  --progress:2%;
+  --button: transparent;
+  --hover: #FAC564
 }
 .cont {
   display: flex;
@@ -12,10 +13,10 @@
   height: 150vh;
   margin: 0;
   padding: 0;
-  background-image: url("../images/Frame\ 5.png");
-  background-repeat: repeat;
-  background-position: center center;
-  /* background-size: cover; */
+  background-image: url("../images/young-ethnic-curly-man-with-hands-pockets-leaning-grey-wall.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
 
 }
 
@@ -27,10 +28,14 @@
   font-weight: 500;
   width: 80vw;
   text-align: left;
-  border: 1px solid rgb(0, 0, 0);
+  background-color: black;
+  box-shadow: -2px 2px gray;
   margin-top: 15vh;
   padding:  0;
-  color: rgb(0, 0, 0);
+  color: white;
+  opacity: 0.4;
+  
+  
 
 }
 
@@ -49,7 +54,7 @@
 .choose {
   cursor: pointer;
   box-shadow: none;
-  border: 0;
+  border: 1px solid gray;
   max-width: 100px;
   min-width: 70px;
   font-size: 1rem;
@@ -60,7 +65,8 @@
 }
 
 .choose:hover {
-  color: #FAC564;
+  color: var(--hover);
+  transform: translateY(-2%)
 
 }
 
@@ -73,6 +79,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* flex-direction: column; */
   border: 1px solid rgb(0, 0, 0);
   height: 62%;
   /* min-height: fit-content; */
@@ -88,7 +95,7 @@
   height: 20px;
   padding: 2px;
   width: 100%;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid white;
   border-radius: 20px;
   
 }
@@ -96,7 +103,8 @@
   height: 100%;
   width: var(--progress);
   border-radius: 20px;
-  background-color: var(--button)
+  /* background-color: var(--button) */
+  background-color: #fff;
 
 }
 .choose::-webkit-file-upload-button {
@@ -112,4 +120,17 @@
 .choose::-webkit-file-upload-button:hover{
   color: #FAC564;
 
+}
+.dyn{
+  display:none;
+  min-height:50px;
+  min-width:50px;
+  height: 20vh;
+  width: 20vh;
+  margin: 1%;
+  background-color:transparent
+}
+.dynP{
+ 
+  opacity: 2;
 }

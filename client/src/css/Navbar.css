@@ -8,6 +8,7 @@
     height: 15vh;
     margin: 0;
     padding: 0;
+    z-index: 2;
 }
 a{
     color: white;
@@ -35,4 +36,7 @@ a{
 }
 .options a:hover{
     color: #FAC564;
+    border-top: 1px solid #FAC564;
+
+    
 }

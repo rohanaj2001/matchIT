@@ -2,7 +2,7 @@ const { json } = require('body-parser');
 const { create } = require('../models/shirtSchema');
 const { spawn } = require('child_process');
 
-const shirts = require('../models/shirtSchema')
+// const shirts = require('../models/shirtSchema')
 const pants = require('../models/pantSchema')
 
 const homeget = (req, res) => {
@@ -27,8 +27,6 @@ const shirtPost = async (req, res) => {
             python.on('close', (code) => {
                 console.log(`child process close all stdio with code ${code}`);
                 res.send(dataToSend)
-
-            // res.send({status:200})
     
         })} catch (error) {
             console.log(error);
