@@ -28,12 +28,11 @@
   font-weight: 500;
   width: 80vw;
   text-align: left;
-  background-color: black;
-  box-shadow: -2px 2px gray;
+  background-color: rgb(0, 0, 0, 0.4);
   margin-top: 15vh;
   padding:  0;
   color: white;
-  opacity: 0.4;
+  z-index: 0;
   
   
 
@@ -51,16 +50,18 @@
   width: auto;
 }
 
-.choose {
+.choose{
   cursor: pointer;
   box-shadow: none;
-  border: 1px solid gray;
+  border: 1px solid #FAC564;
+  background-color: #fff;
   max-width: 100px;
   min-width: 70px;
   font-size: 1rem;
   border-radius: 20px;
   background-color: var(--button);
   color: rgb(255, 255, 255);
+  z-index: 2;
 
 }
 
@@ -77,16 +78,16 @@
 
 .matches {
   display: flex;
+  z-index: 2;
   align-items: center;
   justify-content: center;
-  /* flex-direction: column; */
   border: 1px solid rgb(0, 0, 0);
-  height: 62%;
-  /* min-height: fit-content; */
+  height: 62%; 
   width: auto;
   margin:auto 1% ;
   padding: 0 2%;
   width: auto;
+  opacity: 1;
 
 
 
@@ -129,8 +130,4 @@
   width: 20vh;
   margin: 1%;
   background-color:transparent
-}
-.dynP{
- 
-  opacity: 2;
 }
